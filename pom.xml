@@ -85,13 +85,13 @@
 	</configuration>
 	</plugin>
 	
-	 <plugin>
+	<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.19.1</version>
         <configuration>
           <suiteXmlFiles>
-            <file>src/main/java/marketwatch.xml</file>
+            <suiteXmlFile>marketwatch.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
