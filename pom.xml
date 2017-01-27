@@ -91,7 +91,7 @@
         <version>2.19.1</version>
         <configuration>
           <suiteXmlFiles>
-            <file>src/test/resources/testng.xml</file>
+            <file>src/main/java/marketwatch.xml</file>
           </suiteXmlFiles>
         </configuration>
       </plugin>
