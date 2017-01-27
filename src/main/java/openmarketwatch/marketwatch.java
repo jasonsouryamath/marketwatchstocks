@@ -35,7 +35,7 @@ WebElement trump = driver.findElement(By.cssSelector(".search__input"));
 trump.sendKeys("stock");
 Thread.sleep(2000);
 driver.findElement(By.cssSelector("#search-columns > div:nth-child(3) > a:nth-child(1)")).click();
-driver.quit();
+driver.close();
 }
 
 }
