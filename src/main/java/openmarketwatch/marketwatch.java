@@ -18,7 +18,7 @@ public  class marketwatch {
 public void TestMarketWatch() throws InterruptedException {
 WebDriver driver;
 // create new firefox webdriver isntance by setting the properties using the code below 
-System.setProperty("webdriver.firefox.bin","/Applications/Firefox.app/Contents/MacOSfirefox-bin/");
+System.setProperty("webdriver.firefox.bin","/Applications/Firefox.app/Contents/MacOS/firefox-bin/");
 driver = new FirefoxDriver();
 driver.get("http://www.marketwatch.com/");
 
