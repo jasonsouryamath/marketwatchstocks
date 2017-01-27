@@ -22,8 +22,10 @@ public void TestMarketWatch() throws InterruptedException {
 // create new firefox webdriver isntance by setting the properties using the code below 
 //System.setProperty("webdriver.firefox.bin","/Users/jasonsouryamath/Desktop/FirefoxDeveloperEdition.app/Contents/MacOS/firefox-bin");
 //driver = new FirefoxDriver();
- System.setProperty("webdriver.gecko.driver", "C:\\Users\\jsouryamath\\Desktop\\geckodriver.exe");
- driver =new FirefoxDriver();
+ //System.setProperty("webdriver.gecko.driver", "C:\\Users\\jsouryamath\\Desktop\\geckodriver.exe");
+// driver =new FirefoxDriver();
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\jsouryamath\\Desktop\\chromedriver.exe");
+driver =new ChromeDriver();
 driver.get("http://www.marketwatch.com/");
 
 WebElement stock = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".btn--search")));
