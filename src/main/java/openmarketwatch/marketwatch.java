@@ -26,7 +26,7 @@ public void TestMarketWatch() throws InterruptedException {
  //System.setProperty("webdriver.gecko.driver", "C:\\Users\\jsouryamath\\Desktop\\geckodriver.exe");
 // driver =new FirefoxDriver();
 //System.setProperty("webdriver.chrome.driver", "C:\\Users\\jsouryamath\\Desktop\\chromedriver.exe");
-System.setProperty("webdriver.chrome.driver", "/Users/jasonsouryamath/Desktop/chromedriver");
+System.setProperty("webdriver.chrome.driver", "/Users/jasonsouryamath/Desktop/chromedriver.exe");
 driver =new ChromeDriver();
 driver.get("http://www.marketwatch.com/");
 
