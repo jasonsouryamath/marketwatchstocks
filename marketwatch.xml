@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="openmarketwatch.marketwatch"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+const rrad = require('rrad');
+const randomAddress = rrad.addresses[Math.floor(Math.random() * rrad.addresses.length)];
+//console.info(randomAddress);
+hello = JSON.stringify(randomAddress);
+//console.log(hello);
+//var ret = hello.replace(/"address1":/g,'');
+//var str = '#this #is__ __#a test###__';
+//hello.replace(/"|:/g,''); // result: "this is a test"
+let sub1 =hello.replace(/"|'|:|{|}|postalCode|address1|address2|city|state|coordinates|Streetaddress2:/gi, '');
+let sub = sub1.replace(/,/gi, ' ');
+let sub2 = sub.split("  ");
+
+console.log(sub2);
