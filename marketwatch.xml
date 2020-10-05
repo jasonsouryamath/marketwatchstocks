@@ -1,13 +1,10 @@
-const rrad = require('rrad');
-const randomAddress = rrad.addresses[Math.floor(Math.random() * rrad.addresses.length)];
-//console.info(randomAddress);
-hello = JSON.stringify(randomAddress);
-//console.log(hello);
-//var ret = hello.replace(/"address1":/g,'');
-//var str = '#this #is__ __#a test###__';
-//hello.replace(/"|:/g,''); // result: "this is a test"
-let sub1 =hello.replace(/"|'|:|{|}|postalCode|address1|address2|city|state|coordinates|Streetaddress2:/gi, '');
-let sub = sub1.replace(/,/gi, ' ');
-let sub2 = sub.split("  ");
+const addgen = require('rrad');
+var parser = require('parse-address');
 
-console.log(sub2);
+const FullAddress = addgen.addresses[Math.floor(Math.random() * addgen.addresses.length)];
+const obj = JSON.stringify(FullAddress);
+const obj2 = JSON.parse(obj)
+zipcode = obj2.postalCode;
+console.log(obj2.address1);
+console.log(obj2.state);
+console.log(obj2.postalCode);
